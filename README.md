@@ -1,3 +1,3 @@
 # closed
 
-Closed
+~~Closed~~
