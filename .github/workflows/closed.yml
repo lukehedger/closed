@@ -2,8 +2,7 @@ name: Closed
 
 on:
   pull_request:
-    branches:
-    - master
+    branches: [master]
     types: [closed]
 
 jobs:
