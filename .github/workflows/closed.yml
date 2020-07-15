@@ -1,0 +1,19 @@
+name: Closed
+
+on:
+  pull_request:
+    branches:
+    - master
+    types: [closed]
+
+jobs:
+  closed:
+    runs-on: ubuntu-18.04
+    steps:
+    - uses: actions/checkout@v1
+
+    - name: Closed?
+      run: echo Closed
+
+    - name: Merged?
+      run: echo ${{ github.event.pull_request.merged }}

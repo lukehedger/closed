@@ -1,0 +1,16 @@
+name: Opened
+
+on:
+  pull_request:
+    branches:
+    - master
+    types: [opened]
+
+jobs:
+  opened:
+    runs-on: ubuntu-18.04
+    steps:
+    - uses: actions/checkout@v1
+
+    - name: Opened?
+      run: echo Opened
